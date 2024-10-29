@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Plus Jakarta Sans";
+  background-color: #f4f4f4;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.title {
+  text-align: center;
+  font-size: 3em;
+  margin: 32px;
+}
+.container {
+    padding: 100px;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+.galeri-wrap {
+    display: flex;
+    gap: 20px;
+    margin-top: 32px;
+}
+.img-vertikal, .img-1, .img-2, .img-horizontal, .card{
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.img-vertikal img {
+    width: 500px;
+    height: 550px;
+    transition: transform 0.3s ease;
+}
+.img-vertikal:hover img, .img-1:hover img, .img-2:hover img, .img-horizontal:hover img, .card:hover img {
+    transform: scale(1.05);
+}
+.img-card {
+    display: flex;
+    gap: 20px;
+}
+.img-1 img, .img-2 img {
+    width: 370px;
+    height: 250px;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+.img-horizontal img {
+    width: 760px;
+    height: 280px;
+    border-radius: 16px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+.caption {
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0.6), transparent);
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    padding: 24px;
+    text-align: left;
+    position: absolute;
+    bottom: -50%;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    transition: bottom 0.4s ease-in-out;
+}
+.img-vertikal:hover .caption, .img-1:hover .caption, .img-2:hover .caption, .img-horizontal:hover .caption, .card:hover .caption {
+    bottom: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.content {
+    margin-top: 20px;
+}
+.all-galeri {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    width: 416px;
+}
+.card img {
+    width: 100%;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}

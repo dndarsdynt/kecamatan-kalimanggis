@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Plus Jakarta Sans';
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.title {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 32px;
+}
+.container {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 100px;
+}
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.member {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    min-height: 200px;
+}
+.member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.member h3 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+}
+.member p, .caption {
+    font-size: 0.9em;
+    color: #868585;
+    margin: 5px 0 20px;
+}
+.caption {
+    height: 90px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: #000;
+}
+.social-icons a i {
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+.projectby {
+    margin-top: 72px;
+}
+.image {
+    display: flex;
+    margin: 44px;
+    gap: 10px;
+    justify-content: center;
+}

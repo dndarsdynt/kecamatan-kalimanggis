@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Plus Jakarta Sans";
+}
+main {
+  background-color: #f4f4f4;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.title {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 3em;
+}
+.title-2 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 2em;
+}
+
+.container {
+  padding: 100px;
+}
+
+.pelayanan {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-wrap {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 34px;
+}
+.card-pelayanan {
+  background-color: #fff;
+  max-width: 800px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  border: 3px #000 solid;
+  padding: 20px;
+  border-radius: 50px;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.pelayanan-container {
+  display: flex;
+  gap: 10px;
+}
+.pelayanan-wrap, .pelayanan-side {
+  margin-top: 28px;
+  width: 50%;
+}
+.item {
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-wrap {
+  height: 40px;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.text-wrap.expanded {
+  height: auto;
+}
+
+.text {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+
+.text h2 {
+  margin: 0;
+}
+
+.icon {
+  transition: transform 0.3s ease-in-out;
+  color: #888;
+}
+
+.text-wrap.expanded .text .icon {
+  transform: rotate(90deg);
+}
+
+.contents {
+  text-align: left;
+  line-height: 24px
+}
+
+.item .contents ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item .contents li {
+  list-style: disc;
+  margin-left: 20px;
+}

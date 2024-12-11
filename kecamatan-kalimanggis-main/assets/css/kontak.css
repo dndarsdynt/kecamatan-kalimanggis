@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Plus Jakarta Sans";
+  background-color: #f4f4f4;
+}
+main {
+  padding-top: 100px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.title {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 32px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-wrap {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+}
+.form-container,
+.info-container {
+  flex: 1;
+  margin: 10px;
+}
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input::placeholder {
+  padding: 0;
+}
+.form-container textarea {
+  height: 150px;
+}
+.form-container button {
+  background-color: blue;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.info-container h2 {
+  color: #222831;
+  margin-bottom: 10px;
+}
+.info-container h3 {
+  margin-bottom: 20px;
+}
+.info-container p {
+  margin-bottom: 20px;
+  color: #666666;
+}
+.info-container .contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.info-container .contact-info i {
+  color: #222831;
+  margin-right: 10px;
+}
+.info-container .social-icons i {
+  color: #222831;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.map {
+  margin-top: 40px;
+}
+
+/* Responsif untuk ukuran layar tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact-wrap {
+      flex-direction: row; /* Mengatur elemen menjadi baris */
+      justify-content: space-between; /* Menyebar elemen */
+  }
+  .container {
+    padding: 50px;
+  }
+  .form-container,
+  .info-container {
+      flex: 1; /* Mengisi sisa ruang */
+      margin-top: 10px; /* Jarak antar elemen */
+  }
+}
+
+/* Responsif untuk ukuran layar smartphone */
+@media (max-width: 767px) {
+  .title {
+      font-size: 2em; /* Ukuran font lebih kecil untuk smartphone */
+  }
+  .contact-wrap {
+      flex-direction: column; /* Mengatur elemen menjadi kolom */
+  }
+  .container {
+    padding: 30px;
+  }
+  .form-container,
+  .info-container {
+      margin-top: 10px;
+      font-size: 14px; /* Menghilangkan margin untuk smartphone */
+  }
+}

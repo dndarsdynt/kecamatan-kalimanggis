@@ -150,3 +150,19 @@ input::placeholder {
     gap: 64px;
     display: flex;
 }
+/* Responsif untuk ukuran layar tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .scroll2a {
+        font-size: 1em;
+    }
+}
+
+/* Responsif untuk ukuran layar smartphone */
+@media (max-width: 767px) {
+    .scroll2a {
+        font-size: 1px;
+    }
+    .scroll2b {
+        width: 95%;
+    }
+}

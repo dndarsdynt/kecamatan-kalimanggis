@@ -61,3 +61,35 @@ button a {
   text-decoration: none;
   font-size: 14px;
 }
+/* Responsif untuk ukuran layar tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .title {
+      font-size: 2.5em; /* Ukuran font lebih kecil untuk tablet */
+  }
+  .item {
+      flex-direction: row; /* Mengatur item menjadi baris */
+  }
+  .img {
+      width: 200px; /* Lebar gambar lebih besar untuk tablet */
+      height: 200px; /* Tinggi gambar lebih besar untuk tablet */
+  }
+}
+
+/* Responsif untuk ukuran layar smartphone */
+@media (max-width: 767px) {
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+  .title {
+      font-size: 2em; /* Ukuran font lebih kecil untuk smartphone */
+  }
+  .item {
+      flex-direction: column; /* Mengatur item menjadi kolom */
+      align-items: flex-start; /* Mengatur item ke kiri */
+  }
+  .img {
+      width: 100%; /* Gambar menggunakan lebar penuh */
+      height: 150px; /* Tinggi gambar lebih besar untuk smartphone */
+  }
+}

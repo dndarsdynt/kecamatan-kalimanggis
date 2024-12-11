@@ -6,7 +6,7 @@ const sr = ScrollReveal({
 })
 
 
-/*SCROLL HOME*/
+
 sr.reveal('.scroll1', { origin: 'bottom', delay: 100})
 sr.reveal('.scroll2', { delay: 100 })
 sr.reveal('.scroll2a', { delay: 500 })

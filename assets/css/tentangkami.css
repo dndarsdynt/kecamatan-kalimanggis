@@ -78,3 +78,26 @@ body {
     gap: 10px;
     justify-content: center;
 }
+/* Responsif untuk ukuran layar tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .title {
+        font-size: 2.5em; /* Ukuran font lebih kecil untuk tablet */
+    }
+    .member {
+        width: 200px; /* Lebar lebih kecil untuk tablet */
+    }
+}
+
+/* Responsif untuk ukuran layar smartphone */
+@media (max-width: 767px) {
+    .title {
+        font-size: 2em; /* Ukuran font lebih kecil untuk smartphone */
+    }
+    .team {
+        flex-direction: column; /* Mengatur anggota tim menjadi kolom */
+        align-items: center; /* Mengatur anggota tim ke tengah */
+    }
+    .member {
+        width: 90%; /* Lebar penuh untuk anggota tim di smartphone */
+    }
+}

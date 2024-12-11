@@ -91,3 +91,36 @@ input::placeholder {
 .map {
   margin-top: 40px;
 }
+/* Responsif untuk ukuran layar tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact-wrap {
+    flex-direction: row; /* Mengatur elemen menjadi baris */
+    justify-content: space-between; /* Menyebar elemen */
+  }
+  .container {
+    padding: 50px;
+  }
+  .form-container,
+  .info-container {
+    flex: 1; /* Mengisi sisa ruang */
+    margin-top: 10px; /* Jarak antar elemen */
+  }
+}
+
+/* Responsif untuk ukuran layar smartphone */
+@media (max-width: 767px) {
+  .title {
+    font-size: 2em; /* Ukuran font lebih kecil untuk smartphone */
+  }
+  .contact-wrap {
+    flex-direction: column; /* Mengatur elemen menjadi kolom */
+  }
+  .container {
+    padding: 30px;
+  }
+  .form-container,
+  .info-container {
+    margin-top: 10px;
+    font-size: 14px; /* Menghilangkan margin untuk smartphone */
+  }
+}

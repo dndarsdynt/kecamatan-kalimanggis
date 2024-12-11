@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Plus Jakarta Sans';
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.title {
+    text-align: center;
+    font-size: 3em;
+}
+.sejarah-wrap {
+    padding: 100px;
+    background-color: #f4f4f4;
+}
+.sejarah {
+    margin-top: 32px;
+    display: flex;
+    gap: 100px;
+}
+.text {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    text-indent: 64px;
+    text-align: justify;
+    order: 1;
+}
+.img-side {
+    background-color: black;
+    width: 500px;
+    height: 250px;
+    border-radius: 12px;
+    background-image: url('/assets/img/bangunan.jpg');
+    background-position: center;
+    background-size: cover;
+    order: 2;
+}
+
+h3 {
+    margin: 8px 0;
+}
+.geografis-wrap {
+    padding: 0 100px 100px 100px;
+    background-color: #f4f4f4;
+    color: #000;
+}
+.card-wrap {
+    padding-top: 32px;
+    display: flex;
+    gap: 24px;
+}
+.card-geo {
+    width: 25%;
+    min-height: 160px;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+/* Ukuran layar desktop */
+@media (min-width: 1200px) {
+    .sejarah-wrap {
+      padding: 100px;
+    }
+    .sejarah {
+      gap: 100px;
+    }
+    .text {
+      width: 60%;
+    }
+    .img-side {
+      width: 500px;
+      height: 250px;
+    }
+    .geografis-wrap {
+    height: 35vh;
+    padding: 0 100px 100px 100px;
+    }
+    .card-wrap {
+      gap: 24px;
+    }
+    .card-geo {
+      width: 25%;
+    }
+  }
+  
+  /* Ukuran layar tablet */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .sejarah-wrap {
+      padding: 74px 50px 50px 50px;
+    }
+    .sejarah {
+      gap: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+    .text {
+      width: 95%;
+      order: 2;
+    }
+    .img-side {
+      width: 95%;
+      height: 200px;
+      order: 1;
+    }
+    .geografis-wrap {
+      padding: 0 50px 50px 50px;
+    }
+    .card-wrap {
+      gap: 16px;
+    }
+    .card-geo {
+      width: 33.33%;
+    }
+  }
+  
+  /* Ukuran layar smartphone */
+  @media (max-width: 767px) {
+    .sejarah-wrap {
+      padding: 70px 20px 20px 20px;
+    }
+    .sejarah {
+      gap: 50px;
+      display: flex;
+      flex-direction: column;
+    }
+    .text {
+      width: 95%;
+      order: 2;
+    }
+    .img-side {
+      width: 95%;
+      height: 200px;
+      order: 1;
+    }
+    .geografis-wrap {
+      padding: 0 20px 20px 20px;
+    }
+    .card-wrap {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card-geo {
+      width: 95%;
+    }
+  }

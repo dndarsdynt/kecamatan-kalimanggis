@@ -1,0 +1,87 @@
+/* -----FOOTER---- */
+@import url("https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+footer {
+  font-family: "Plus Jakarta Sans";
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+.container-footer {
+  padding: 30px;
+}
+.email-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.email-section p {
+  margin: 0;
+  font-size: 16px;
+}
+.email-section input[type="email"] {
+  background-color: #0a0a0a;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+}
+.email-section input[type="email"]::placeholder {
+  color: #888;
+}
+.email-section input[type="email"]:focus {
+  outline: none;
+}
+.email-section .fa-arrow-right {
+  color: #ffffff;
+  margin-left: 10px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.footer-content h1 {
+  font-size: 36px;
+  margin: 0;
+}
+.footer-content p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.social-icons {
+  text-align: right;
+}
+.social-icons a {
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  margin-top: 20px;
+}
+.footer-bottom .fa-heart {
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .footer-content, .text-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+}

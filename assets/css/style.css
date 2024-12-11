@@ -14,7 +14,49 @@ body {
 }
 
 /* ----NAVBAR---- */
-
+.landingPage {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/img/landing-page.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 16px;
+  margin-top: 32px;
+  border-radius: 24px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landingPage h1 {
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+}
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 4px;
+}
+.searchBar input {
+  padding: 16px;
+  width: 50%;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+.searchBar button {
+  border-radius: 8px;
+}
+.searchBar button i {
+  text-decoration: none;
+  color: #000;
+  background-color: #fff ;
+  padding: 24px 16px;
+  border-radius: 8px;
+}
 /* ----TITLE---- */
 .title {
   font-size: 3em;
@@ -364,13 +406,14 @@ iframe {
     padding: 50px 50px;
   }
 
-  .landing-page .text-title {
-    left: 10%;
+  .landingPage h1 {
+    font-size: 2.5em;
   }
 
-  .landing-page .text-title h1 {
-    font-size: 3em;
+  .searchBar input {
+    width: 70%;
   }
+
 
   .pegawai {
     flex-direction: column;
